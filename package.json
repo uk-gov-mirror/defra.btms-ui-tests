@@ -9,6 +9,7 @@
   "license": "OGL-UK-3.0",
   "scripts": {
     "clean": "rm -rf allure-results && rm -rf allure-report",
+    "build": "babel src --out-dir dist",
     "test": "npm run clean && wdio run wdio.conf.js",
     "test:local": "npm run clean && wdio run wdio.local.conf.js",
     "test:local:debug": "DEBUG=true npm run test:local",
