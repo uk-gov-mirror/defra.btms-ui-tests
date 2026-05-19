@@ -25,6 +25,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: |
+          npm audit
           npm ci
           npm run build
           npm run format:check
