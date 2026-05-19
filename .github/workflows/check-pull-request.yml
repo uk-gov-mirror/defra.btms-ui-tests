@@ -25,7 +25,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: |
-          npm audit
+          npm audit fix --force
           npm ci
           npm run build
           npm run format:check
